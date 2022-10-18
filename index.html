@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-
+        KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundl
+        e.min.js" integrity="sha384-
+        U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/funks.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Partyroom Santiago España G16</title>
+</head>
+<body>
+    <!--
+    <h1>#MisionTIC 2022</h1>
+    <div class="container unauthenticated">
+        Para iniciar sesión con GitHub:
+        <a href="/oauth2/authorization/github">Haz click</a>
+    </div>
+    <div class="container authenticated" style="display:none">
+        Autenticado como <span id="user"></span>    
+    </div>
+    -->
+
+    <div class="container bigContainer">
+
+    <div class="container cont1">
+
+    <div class="card mainCard" id ="cardCategory"></div>
+
+    <div class="card mainCard" id ="cardPartyroom"></div>
+
+    <div class="card mainCard" id ="cardClient"></div>
+
+    <div class="card mainCard" id ="cardMessage"></div>
+
+    <div class="card mainCard" id ="cardReservation"></div>
+
+    <div class="card mainCard" id ="cardReports"></div>
+
+    </div>
+    <div class="mainTitle">Reto 5 Partyroom
+        <div>Santiago España G16</div>
+        <button class="btn buttonGenMes"onclick="showMes()">Message!</button>
+    </div>
+    </div>
+    
+    <div class= "container showCardsContainer">
+        <div class = "card-deck" id="result"></div>
+    </div>
+
+    <!--<div><button class="btn btn-primary" onclick="bringPartyroom()">Back</button></div> -->
+</body>
+<!--
+<script type="text/javascript">
+    $.get("/user", function (data){
+        $("#user").html(data.name);
+        $(".unauthenticated").hide()
+        $(".authenticated").show()
+    });
+</script>
+-->
+</html>

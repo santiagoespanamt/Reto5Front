@@ -67,7 +67,7 @@ function deleteCategory(idCategory) {
 function bringCategory(){
     $.ajax(
               {
-                url:"http://129.80.206.229:8081/api/Category/all",
+                url:"http://129.80.206.229:8080/api/Category/all",
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){                
@@ -144,7 +144,7 @@ function cancelSaveCategory(){
 function bringPartyroom(){
     $.ajax(
               {
-                url:"http://129.80.206.229:8081/api/Partyroom/all",
+                url:"http://129.80.206.229:8080/api/Partyroom/all",
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){

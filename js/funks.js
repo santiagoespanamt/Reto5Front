@@ -21,7 +21,7 @@ function saveCategory(){
     $.ajax (
         {
 
-            url          : 'http://129.80.206.229/api/Category/save',
+            url          : 'http://129.80.206.229:8080/api/Category/save',
             type         : 'POST',
             data         :  dataToSend,
             datatype     :  "JSON",
@@ -45,7 +45,7 @@ function saveCategory(){
 function deleteCategory(idCategory) {
 
     $.ajax({
-        url         :   'http://129.80.206.229/api/Category/' + idCategory,
+        url         :   'http://129.80.206.229:8080/api/Category/' + idCategory,
         type        :   'DELETE',
 
         success     :   function(pepe) {
@@ -67,7 +67,7 @@ function deleteCategory(idCategory) {
 function bringCategory(){
     $.ajax(
               {
-                url:"http://129.80.206.229/api/Category/all",
+                url:"http://129.80.206.229:8080/api/Category/all",
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){                
@@ -144,7 +144,7 @@ function cancelSaveCategory(){
 function bringPartyroom(){
     $.ajax(
               {
-                url:"http://129.80.206.229/api/Partyroom/all",
+                url:"http://129.80.206.229:8080/api/Partyroom/all",
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){
@@ -175,7 +175,7 @@ function savePartyroom(){
     $.ajax (
         {
 
-            url          : 'http://129.80.206.229/api/Partyroom/save',
+            url          : 'http://129.80.206.229:8080/api/Partyroom/save',
             type         : 'POST',
             data         :  dataToSend,
             datatype     :  "JSON",
@@ -285,7 +285,7 @@ function cancelSavePartyroom(){
 function deletePartyroom(idPartyroom) {
 
     $.ajax({
-        url : 'http://129.80.206.229/api/Partyroom/' + idPartyroom,
+        url : 'http://129.80.206.229:8080/api/Partyroom/' + idPartyroom,
         type        :   'DELETE',
 
         success     :   function(pepe) {
@@ -314,7 +314,7 @@ function saveClient(){
     $.ajax (
         {
 
-            url          : 'http://129.80.206.229/api/Client/save',
+            url          : 'http://129.80.206.229:8080/api/Client/save',
             type         : 'POST',
             data         :  dataToSend,
             datatype     :  "JSON",
@@ -341,7 +341,7 @@ function saveClient(){
 function bringClient(){
     $.ajax(
               {
-                url:"http://129.80.206.229/api/Client/all",
+                url:"http://129.80.206.229:8080/api/Client/all",
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){
@@ -360,7 +360,7 @@ function bringClient(){
 function deleteClient(idClientDel) {
     
     $.ajax({
-        url         :   'http://129.80.206.229/api/Client/' + idClientDel,
+        url         :   'http://129.80.206.229:8080/api/Client/' + idClientDel,
         type        :   'DELETE',
         
 
@@ -482,7 +482,7 @@ function saveMessage(){
     $.ajax (
         {
 
-            url          : 'http://129.80.206.229/api/Message/save',
+            url          : 'http://129.80.206.229:8080/api/Message/save',
             type         : 'POST',
             data         :  dataToSend,
             datatype     :  "JSON",
@@ -508,7 +508,7 @@ function saveMessage(){
 function deleteMessage(idMessDel) {
 
     $.ajax({
-        url : 'http://129.80.206.229/api/Message/' + idMessDel,
+        url : 'http://129.80.206.229:8080/api/Message/' + idMessDel,
         type        :   'DELETE',
 
         success     :   function(pepe) {
@@ -529,7 +529,7 @@ function deleteMessage(idMessDel) {
 function bringMessage(){
     $.ajax(
               {
-                url:"http://129.80.206.229/api/Message/all",
+                url:"http://129.80.206.229:8080/api/Message/all",
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){
@@ -624,7 +624,7 @@ function saveReserv(){
     $.ajax (
         {
 
-            url          : 'http://129.80.206.229/api/Reservation/save',
+            url          : 'http://129.80.206.229:8080/api/Reservation/save',
             type         : 'POST',
             data         :  dataToSend,
             datatype     :  "JSON",
@@ -652,7 +652,7 @@ function saveReserv(){
 function deleteReserv(idResDel) {
 
     $.ajax({
-        url         :   'http://129.80.206.229/api/Reservation/' + idResDel,
+        url         :   'http://129.80.206.229:8080/api/Reservation/' + idResDel,
         type        :   'DELETE',
 
         success     :   function(pepe) {
@@ -673,7 +673,7 @@ function deleteReserv(idResDel) {
 function bringReserv(){
     $.ajax(
               {
-                url:"http://129.80.206.229/api/Reservation/all",
+                url:"http://129.80.206.229:8080/api/Reservation/all",
                 type:"GET",
                 datatype:"JSON",
                 success:function(respuesta){
@@ -802,7 +802,7 @@ function bringReportDates(){
     //startDate:$("#startDate").val()
 
     $.ajax({
-        url:"http://129.80.206.229/api/Reservation/report-dates/"+fechaInicio+"/"+fechaCierre,
+        url:"http://129.80.206.229:8080/api/Reservation/report-dates/"+fechaInicio+"/"+fechaCierre,
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -838,7 +838,7 @@ function paintReportDate(items) {
 
 function bringReportStatus(){
     $.ajax({
-        url:"http://129.80.206.229/api/Reservation/report-status",
+        url:"http://129.80.206.229:8080/api/Reservation/report-status",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -868,7 +868,7 @@ function paintReportStatus(response){
 
 function bringReportClients(){
     $.ajax({
-        url:"http://129.80.206.229/api/Reservation/report-clients",
+        url:"http://129.80.206.229:8080/api/Reservation/report-clients",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
